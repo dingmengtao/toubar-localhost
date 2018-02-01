@@ -2,9 +2,95 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$/..">
-      <sourceFolder url="file://$MODULE_DIR$/../zerg/application" isTestSource="false" packagePrefix="app\" />
+      <sourceFolder url="file://$MODULE_DIR$/../Zerg/application" isTestSource="false" packagePrefix="app\" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://$MODULE_DIR$/../toubar-admin-t/vendor/sgsoft-studio/base/resources/root/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180119/vendor/sgsoft-studio/base/resources/root/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../admin.goodlink.shop_20171024_2/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-4.0/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180119/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180125/vendor/sgsoft-studio/base/resources/root/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../toubar-admin-t/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed——back/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+          <root url="phar://$MODULE_DIR$/../toubar-admin-t/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180118-2/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180122/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180116/vendor/sgsoft-studio/base/resources/root/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../admin.goodlink.shop_20171024/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180118-2/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180118-2/vendor/sgsoft-studio/base/resources/root/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180118/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180125/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../admin.goodlink.shop_20171023/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar/" />
+          <root url="phar://$MODULE_DIR$/../admin.goodlink.shop_20171024_1/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180125/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180116/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../toubar-admin-t/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed——back/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+          <root url="phar://$MODULE_DIR$/../vendor/sgsoft-studio/base/resources/root/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180122/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180119/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../admin.goodlink.shop_20171023_1/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180116/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180118-2/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed——back/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180125/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed——back/vendor/sgsoft-studio/base/resources/root/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180119/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180118/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180118/vendor/sgsoft-studio/base/resources/root/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180122/vendor/sgsoft-studio/base/resources/root/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180122/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180116/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180118/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+        </CLASSES>
+        <SOURCES>
+          <root url="phar://$MODULE_DIR$/../toubar-admin-t/vendor/sgsoft-studio/base/resources/root/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180119/vendor/sgsoft-studio/base/resources/root/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../admin.goodlink.shop_20171024_2/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-4.0/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180119/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180125/vendor/sgsoft-studio/base/resources/root/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../toubar-admin-t/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed——back/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+          <root url="phar://$MODULE_DIR$/../toubar-admin-t/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180118-2/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180122/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180116/vendor/sgsoft-studio/base/resources/root/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../admin.goodlink.shop_20171024/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180118-2/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180118-2/vendor/sgsoft-studio/base/resources/root/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180118/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180125/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../admin.goodlink.shop_20171023/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar/" />
+          <root url="phar://$MODULE_DIR$/../admin.goodlink.shop_20171024_1/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180125/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180116/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../toubar-admin-t/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed——back/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+          <root url="phar://$MODULE_DIR$/../vendor/sgsoft-studio/base/resources/root/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180122/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180119/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../admin.goodlink.shop_20171023_1/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.0.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180116/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180118-2/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed——back/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180125/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed——back/vendor/sgsoft-studio/base/resources/root/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180119/vendor/phpunit/phpunit/tests/_files/phpunit-example-extension/tools/phpunit.d/phpunit-example-extension-1.0.1.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180118/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180118/vendor/sgsoft-studio/base/resources/root/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180122/vendor/sgsoft-studio/base/resources/root/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180122/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180116/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+          <root url="phar://$MODULE_DIR$/../webed-20180118/vendor/phar-io/manifest/tests/_fixture/test.phar/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>

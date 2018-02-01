@@ -26,8 +26,8 @@ class Investor extends BaseModel
         return $this->prefixImgUrl($value);
     }
     //    添加认证投资人时查询是否已经存在认证投资人
-    public static function getInvestor($telephone){
-        $investor = self::where('telephone','=',$telephone)->find();
+    public static function getInvestor($telephone,$uid){
+        $investor = self::where('telephone','=',$telephone)->where('user_id','=',$uid)->find();
         return $investor;
     }
     //    获取所有投资人信息，形成列表

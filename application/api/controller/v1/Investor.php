@@ -43,7 +43,7 @@ class Investor extends BaseController
         $investorArray = $validate->getDataByRule($investorArray);
         Db::startTrans();
         try{
-            $result = InvestorModel::getInvestor($investorArray['investor_telephone']);
+            $result = InvestorModel::getInvestor($investorArray['investor_telephone'],$uid);
             if(!empty($result)){
                 return json(new SuccessMessage([
                     'code' => 400,
@@ -58,6 +58,7 @@ class Investor extends BaseController
             $investor->telephone = $investorArray['investor_telephone'];
             $investor->img_url = $investorArray['investor_img_url'];
             $investor->identify_one_url = $investorArray['investor_identify_one_url'];
+            $investor->type = 1;
             $investor->save();
 
             $investor_id = $investor->id;

@@ -44,6 +44,7 @@ class Item extends BaseController
             // $item->bp_url = $itemArray['item_bp_url'];
             $item->video_url = $itemArray['item_video_url'];
             $item->img_url = $itemArray['video_img_url'];
+            $item->type = 1;
             $item->save();
 
             $item_id = $item->id;
