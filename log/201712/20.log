@@ -1,0 +1,76 @@
+---------------------------------------------------------------
+[ 2017-12-20T10:12:25+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：1.779930s][吞吐率：0.56req/s] [内存消耗：4,404.69kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004486s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005653s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.012765s ]
+---------------------------------------------------------------
+[ 2017-12-20T10:15:00+08:00 ] 127.0.0.1 127.0.0.1 GET http://toubar.me/api/v1/user_investor
+[ info ] toubar.mehttp://toubar.me/api/v1/user_investor [运行时间：0.166555s][吞吐率：6.00req/s] [内存消耗：4,844.31kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001895s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002935s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.003442s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `user_id` = 2 [ RunTime:0.000958s ]
+---------------------------------------------------------------
+[ 2017-12-20T10:16:15+08:00 ] 127.0.0.1 127.0.0.1 GET http://toubar.me/api/v1/user_investor
+[ info ] toubar.mehttp://toubar.me/api/v1/user_investor [运行时间：0.074093s][吞吐率：13.50req/s] [内存消耗：4,846.29kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001551s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004211s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.002496s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `user_id` = 2 [ RunTime:0.000392s ]
+---------------------------------------------------------------
+[ 2017-12-20T10:23:59+08:00 ] 127.0.0.1 127.0.0.1 GET http://toubar.me/api/v1/user_investor
+[ info ] toubar.mehttp://toubar.me/api/v1/user_investor [运行时间：0.082579s][吞吐率：12.11req/s] [内存消耗：4,846.72kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002065s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004558s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.002613s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `user_id` = 2 [ RunTime:0.000495s ]
+---------------------------------------------------------------
+[ 2017-12-20T10:24:12+08:00 ] 127.0.0.1 127.0.0.1 GET http://toubar.me/api/v1/user_investor
+[ info ] toubar.mehttp://toubar.me/api/v1/user_investor [运行时间：0.067297s][吞吐率：14.86req/s] [内存消耗：4,719.14kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001600s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003782s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.001157s ]
+---------------------------------------------------------------
+[ 2017-12-20T10:26:40+08:00 ] 127.0.0.1 127.0.0.1 GET http://toubar.me/api/v1/user_investor
+[ info ] toubar.mehttp://toubar.me/api/v1/user_investor [运行时间：0.080348s][吞吐率：12.45req/s] [内存消耗：4,846.72kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001634s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002703s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.003827s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `user_id` = 2 [ RunTime:0.000414s ]
+---------------------------------------------------------------
+[ 2017-12-20T10:28:40+08:00 ] 127.0.0.1 127.0.0.1 GET http://toubar.me/api/v1/user_investor
+[ info ] toubar.mehttp://toubar.me/api/v1/user_investor [运行时间：0.074330s][吞吐率：13.45req/s] [内存消耗：4,843.12kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003086s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002644s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.003510s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `user_id` = 2 [ RunTime:0.000641s ]
+---------------------------------------------------------------
+[ 2017-12-20T10:56:44+08:00 ] 127.0.0.1 127.0.0.1 GET http://toubar.me/api/v1/user_investor
+[ info ] toubar.mehttp://toubar.me/api/v1/user_investor [运行时间：0.113651s][吞吐率：8.80req/s] [内存消耗：4,895.30kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001382s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003487s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.002615s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `user_id` = 2 [ RunTime:0.000427s ]
+---------------------------------------------------------------
+[ 2017-12-20T11:49:18+08:00 ] 127.0.0.1 127.0.0.1 GET http://toubar.me/api/v1/user_investor
+[ info ] toubar.mehttp://toubar.me/api/v1/user_investor [运行时间：0.122752s][吞吐率：8.15req/s] [内存消耗：4,894.82kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003503s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005507s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.003176s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `user_id` = 2 [ RunTime:0.000757s ]
+---------------------------------------------------------------
+[ 2017-12-20T11:50:07+08:00 ] 127.0.0.1 127.0.0.1 GET http://toubar.me/api/v1/user_investor
+[ info ] toubar.mehttp://toubar.me/api/v1/user_investor [运行时间：0.086690s][吞吐率：11.54req/s] [内存消耗：4,895.09kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001824s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001718s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.002783s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `user_id` = 2 [ RunTime:0.000578s ]

@@ -1,0 +1,12 @@
+---------------------------------------------------------------
+[ 2017-12-18T11:04:36+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.692061s][吞吐率：1.44req/s] [内存消耗：4,389.43kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.084883s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.107998s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.028831s ]
+---------------------------------------------------------------
+[ 2017-12-18T11:05:23+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.177934s][吞吐率：5.62req/s] [内存消耗：4,914.21kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001832s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.003829s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.015643s ]

@@ -1,0 +1,270 @@
+---------------------------------------------------------------
+[ 2017-12-19T08:57:13+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：6.709669s][吞吐率：0.15req/s] [内存消耗：4,386.59kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.630869s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:1.141070s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.162411s ]
+---------------------------------------------------------------
+[ 2017-12-19T09:53:02+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.371209s][吞吐率：2.69req/s] [内存消耗：4,909.94kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004881s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.076760s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.030151s ]
+---------------------------------------------------------------
+[ 2017-12-19T09:55:08+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.152792s][吞吐率：6.54req/s] [内存消耗：4,910.84kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.046597s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.018571s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000708s ]
+---------------------------------------------------------------
+[ 2017-12-19T10:00:39+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.140648s][吞吐率：7.11req/s] [内存消耗：4,910.91kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002566s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.055337s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000704s ]
+---------------------------------------------------------------
+[ 2017-12-19T10:01:00+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.128391s][吞吐率：7.79req/s] [内存消耗：4,911.33kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001412s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.042253s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000560s ]
+---------------------------------------------------------------
+[ 2017-12-19T10:01:07+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.085363s][吞吐率：11.71req/s] [内存消耗：4,911.33kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001433s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.002879s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000743s ]
+---------------------------------------------------------------
+[ 2017-12-19T10:01:30+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.090733s][吞吐率：11.02req/s] [内存消耗：4,910.91kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001413s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.001507s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000506s ]
+---------------------------------------------------------------
+[ 2017-12-19T10:03:33+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.206834s][吞吐率：4.83req/s] [内存消耗：4,910.95kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.093207s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.004217s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000596s ]
+---------------------------------------------------------------
+[ 2017-12-19T10:30:57+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.086950s][吞吐率：11.50req/s] [内存消耗：4,912.73kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002074s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.003901s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000582s ]
+---------------------------------------------------------------
+[ 2017-12-19T10:32:12+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.116697s][吞吐率：8.57req/s] [内存消耗：4,913.23kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001668s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.028755s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000525s ]
+---------------------------------------------------------------
+[ 2017-12-19T10:33:56+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.136717s][吞吐率：7.31req/s] [内存消耗：4,913.60kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001573s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.050600s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000677s ]
+---------------------------------------------------------------
+[ 2017-12-19T10:57:59+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.237169s][吞吐率：4.22req/s] [内存消耗：4,387.65kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001899s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.012438s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000719s ]
+---------------------------------------------------------------
+[ 2017-12-19T10:57:59+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.246306s][吞吐率：4.06req/s] [内存消耗：4,387.65kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011752s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001178s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000679s ]
+---------------------------------------------------------------
+[ 2017-12-19T11:47:02+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.181529s][吞吐率：5.51req/s] [内存消耗：4,922.48kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003752s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.080071s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.002422s ]
+---------------------------------------------------------------
+[ 2017-12-19T11:53:13+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.146765s][吞吐率：6.81req/s] [内存消耗：4,922.48kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002869s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.057878s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000636s ]
+---------------------------------------------------------------
+[ 2017-12-19T12:00:35+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.089365s][吞吐率：11.19req/s] [内存消耗：4,913.90kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001784s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.001457s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000538s ]
+---------------------------------------------------------------
+[ 2017-12-19T13:04:51+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.220115s][吞吐率：4.54req/s] [内存消耗：4,388.04kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001896s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001448s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000721s ]
+---------------------------------------------------------------
+[ 2017-12-19T13:05:11+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.090411s][吞吐率：11.06req/s] [内存消耗：4,913.90kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001509s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.001104s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000511s ]
+---------------------------------------------------------------
+[ 2017-12-19T13:11:50+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.089690s][吞吐率：11.15req/s] [内存消耗：4,914.96kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002198s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.001311s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000521s ]
+---------------------------------------------------------------
+[ 2017-12-19T13:13:48+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.085440s][吞吐率：11.70req/s] [内存消耗：4,914.96kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002430s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.001593s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000443s ]
+---------------------------------------------------------------
+[ 2017-12-19T13:13:57+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.077528s][吞吐率：12.90req/s] [内存消耗：4,915.04kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001288s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.001411s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000502s ]
+---------------------------------------------------------------
+[ 2017-12-19T13:15:00+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.090429s][吞吐率：11.06req/s] [内存消耗：4,915.04kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001694s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.001229s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000505s ]
+---------------------------------------------------------------
+[ 2017-12-19T13:15:52+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.110730s][吞吐率：9.03req/s] [内存消耗：4,915.09kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001585s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.023839s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000526s ]
+---------------------------------------------------------------
+[ 2017-12-19T13:40:29+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.248872s][吞吐率：4.02req/s] [内存消耗：4,915.27kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.035103s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.051310s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000595s ]
+---------------------------------------------------------------
+[ 2017-12-19T13:40:51+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.069508s][吞吐率：14.39req/s] [内存消耗：4,914.02kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001353s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.002881s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000549s ]
+---------------------------------------------------------------
+[ 2017-12-19T13:42:10+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.069241s][吞吐率：14.44req/s] [内存消耗：4,914.02kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001913s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.002826s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000458s ]
+---------------------------------------------------------------
+[ 2017-12-19T14:02:58+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.073118s][吞吐率：13.68req/s] [内存消耗：4,916.78kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003182s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.002933s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000662s ]
+---------------------------------------------------------------
+[ 2017-12-19T14:13:00+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.069642s][吞吐率：14.36req/s] [内存消耗：4,919.98kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001609s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.004715s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000650s ]
+---------------------------------------------------------------
+[ 2017-12-19T15:05:34+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：1.558203s][吞吐率：0.64req/s] [内存消耗：4,394.86kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004658s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.067549s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.001478s ]
+---------------------------------------------------------------
+[ 2017-12-19T15:06:05+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.438451s][吞吐率：2.28req/s] [内存消耗：4,394.93kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002657s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004487s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000711s ]
+---------------------------------------------------------------
+[ 2017-12-19T16:10:09+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.079692s][吞吐率：12.55req/s] [内存消耗：4,928.08kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003784s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.004075s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000613s ]
+---------------------------------------------------------------
+[ 2017-12-19T16:10:21+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.090944s][吞吐率：11.00req/s] [内存消耗：4,927.35kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001472s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.005457s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179199' LIMIT 1 [ RunTime:0.000883s ]
+---------------------------------------------------------------
+[ 2017-12-19T16:10:33+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.301565s][吞吐率：3.32req/s] [内存消耗：4,986.38kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001518s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.004295s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179191' LIMIT 1 [ RunTime:0.000556s ]
+[ sql ] [ SQL ] INSERT INTO `investor` (`user_id` , `name` , `company` , `job` , `telephone` , `img_url` , `identify_one_url` , `create_time` , `update_time`) VALUES (2 , '丁梦涛' , '杭州应韦科技有限公司' , 'PHP开发' , '15237179191' , '20171219/5a38c97972777g10FIzm.png' , '20171219/5a38c97972f5bYd0roYb.jpg' , 1513671033 , 1513671033) [ RunTime:0.146733s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor_trade` [ RunTime:0.001802s ]
+[ sql ] [ SQL ] INSERT INTO `investor_trade` (`investor_id` , `trade_id` , `create_time` , `update_time`) VALUES (8 , 1 , 1513671033 , 1513671033) [ RunTime:0.036713s ]
+[ sql ] [ SQL ] INSERT INTO `investor_trade` (`investor_id` , `trade_id` , `create_time` , `update_time`) VALUES (8 , 2 , 1513671033 , 1513671033) [ RunTime:0.000296s ]
+[ sql ] [ SQL ] INSERT INTO `investor_trade` (`investor_id` , `trade_id` , `create_time` , `update_time`) VALUES (8 , 3 , 1513671033 , 1513671033) [ RunTime:0.000284s ]
+---------------------------------------------------------------
+[ 2017-12-19T16:25:41+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.072186s][吞吐率：13.85req/s] [内存消耗：4,927.35kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002599s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.002905s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179191' LIMIT 1 [ RunTime:0.000460s ]
+---------------------------------------------------------------
+[ 2017-12-19T16:25:49+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.172925s][吞吐率：5.78req/s] [内存消耗：4,986.38kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002057s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.004892s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179192' LIMIT 1 [ RunTime:0.000538s ]
+[ sql ] [ SQL ] INSERT INTO `investor` (`user_id` , `name` , `company` , `job` , `telephone` , `img_url` , `identify_one_url` , `create_time` , `update_time`) VALUES (2 , '丁梦涛' , '杭州应韦科技有限公司' , 'PHP开发' , '15237179192' , '20171219/5a38cd0d90eafxHXLoKa.png' , '20171219/5a38cd0d918baXk5oV44.jpg' , 1513671949 , 1513671949) [ RunTime:0.046356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor_trade` [ RunTime:0.001487s ]
+[ sql ] [ SQL ] INSERT INTO `investor_trade` (`investor_id` , `trade_id` , `create_time` , `update_time`) VALUES (9 , 1 , 1513671949 , 1513671949) [ RunTime:0.001349s ]
+[ sql ] [ SQL ] INSERT INTO `investor_trade` (`investor_id` , `trade_id` , `create_time` , `update_time`) VALUES (9 , 2 , 1513671949 , 1513671949) [ RunTime:0.000992s ]
+[ sql ] [ SQL ] INSERT INTO `investor_trade` (`investor_id` , `trade_id` , `create_time` , `update_time`) VALUES (9 , 3 , 1513671949 , 1513671949) [ RunTime:0.000997s ]
+---------------------------------------------------------------
+[ 2017-12-19T16:30:57+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/item/create
+[ info ] toubar.mehttp://toubar.me/api/v1/item/create [运行时间：0.215877s][吞吐率：4.63req/s] [内存消耗：4,995.63kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012295s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.006220s ]
+[ sql ] [ SQL ] INSERT INTO `item` (`user_id` , `name` , `stage_id` , `telephone` , `video_url` , `create_time` , `update_time`) VALUES (2 , 'test' , 1 , '15237179193' , '20171219/5a38ce413fa1a4LOyb5i.mp4' , 1513672257 , 1513672257) [ RunTime:0.013408s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.003144s ]
+[ sql ] [ SQL ] INSERT INTO `item_trade` (`item_id` , `trade_id` , `create_time` , `update_time`) VALUES (9 , 1 , 1513672257 , 1513672257) [ RunTime:0.000351s ]
+[ sql ] [ SQL ] INSERT INTO `item_trade` (`item_id` , `trade_id` , `create_time` , `update_time`) VALUES (9 , 2 , 1513672257 , 1513672257) [ RunTime:0.000622s ]
+[ sql ] [ SQL ] INSERT INTO `item_trade` (`item_id` , `trade_id` , `create_time` , `update_time`) VALUES (9 , 3 , 1513672257 , 1513672257) [ RunTime:0.000394s ]
+---------------------------------------------------------------
+[ 2017-12-19T16:36:54+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.076400s][吞吐率：13.09req/s] [内存消耗：4,927.41kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002135s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.003407s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179194' LIMIT 1 [ RunTime:0.000520s ]
+---------------------------------------------------------------
+[ 2017-12-19T16:37:04+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.061319s][吞吐率：16.31req/s] [内存消耗：4,927.41kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001357s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.001317s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179194' LIMIT 1 [ RunTime:0.000601s ]
+---------------------------------------------------------------
+[ 2017-12-19T16:38:52+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/investor/create
+[ info ] toubar.mehttp://toubar.me/api/v1/investor/create [运行时间：0.076638s][吞吐率：13.05req/s] [内存消耗：4,927.35kb] [文件加载：54]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001529s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `investor` [ RunTime:0.001957s ]
+[ sql ] [ SQL ] SELECT * FROM `investor` WHERE  `telephone` = '15237179194' LIMIT 1 [ RunTime:0.000705s ]
+---------------------------------------------------------------
+[ 2017-12-19T17:07:07+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：1.296871s][吞吐率：0.77req/s] [内存消耗：4,398.14kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005024s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004886s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000766s ]
+---------------------------------------------------------------
+[ 2017-12-19T17:07:19+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.214713s][吞吐率：4.66req/s] [内存消耗：4,398.64kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059390s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003904s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000567s ]
+---------------------------------------------------------------
+[ 2017-12-19T17:39:29+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/item/create
+[ info ] toubar.mehttp://toubar.me/api/v1/item/create [运行时间：0.294311s][吞吐率：3.40req/s] [内存消耗：4,995.48kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.077073s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.044518s ]
+[ sql ] [ SQL ] INSERT INTO `item` (`user_id` , `name` , `stage_id` , `telephone` , `video_url` , `create_time` , `update_time`) VALUES (2 , 'test' , 1 , '15237179193' , '20171219/5a38de50d2dd1kLe3fXT.mp4' , 1513676369 , 1513676369) [ RunTime:0.005526s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.005248s ]
+[ sql ] [ SQL ] INSERT INTO `item_trade` (`item_id` , `trade_id` , `create_time` , `update_time`) VALUES (10 , 1 , 1513676369 , 1513676369) [ RunTime:0.000407s ]
+[ sql ] [ SQL ] INSERT INTO `item_trade` (`item_id` , `trade_id` , `create_time` , `update_time`) VALUES (10 , 2 , 1513676369 , 1513676369) [ RunTime:0.000402s ]
+[ sql ] [ SQL ] INSERT INTO `item_trade` (`item_id` , `trade_id` , `create_time` , `update_time`) VALUES (10 , 3 , 1513676369 , 1513676369) [ RunTime:0.000340s ]

@@ -1,0 +1,552 @@
+---------------------------------------------------------------
+[ 2018-01-06T16:05:03+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：3.029945s][吞吐率：0.33req/s] [内存消耗：4,419.94kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.205224s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003764s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000530s ]
+---------------------------------------------------------------
+[ 2018-01-06T16:05:41+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.200097s][吞吐率：5.00req/s] [内存消耗：4,419.98kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001786s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004328s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000537s ]
+---------------------------------------------------------------
+[ 2018-01-06T16:05:52+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.518298s][吞吐率：1.93req/s] [内存消耗：4,419.98kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001849s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003123s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000581s ]
+---------------------------------------------------------------
+[ 2018-01-06T16:05:53+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.335405s][吞吐率：2.98req/s] [内存消耗：4,454.23kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001305s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.003118s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000455s ]
+---------------------------------------------------------------
+[ 2018-01-06T16:05:53+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.365651s][吞吐率：2.73req/s] [内存消耗：4,476.90kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001745s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.002563s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000529s ]
+---------------------------------------------------------------
+[ 2018-01-06T16:05:53+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/item/all?tradeid=1&stageid=1
+[ info ] toubar.me/api/v1/item/all?tradeid=1&stageid=1 [运行时间：0.440194s][吞吐率：2.27req/s] [内存消耗：5,445.87kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001159s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.002632s ]
+[ sql ] [ SQL ] SELECT * FROM `item` ORDER BY `create_time`  desc [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.002413s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` WHERE  `id` IN (3,6,2,4,5,1) [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.002279s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.002179s ]
+[ sql ] [ SQL ] SELECT `trade`.*,pivot.item_id AS pivot__item_id,pivot.trade_id AS pivot__trade_id,pivot.delete_time AS pivot__delete_time,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time FROM `trade` INNER JOIN `item_trade` `pivot` ON `pivot`.`trade_id`=`trade`.`id` WHERE  `pivot`.`item_id` IN (23,22,21,20,19,18,17,16,15,14,13,12,10,9) [ RunTime:0.000775s ]
+---------------------------------------------------------------
+[ 2018-01-06T16:59:25+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.106025s][吞吐率：9.43req/s] [内存消耗：4,477.12kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007129s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.007114s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000864s ]
+---------------------------------------------------------------
+[ 2018-01-06T16:59:29+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.080991s][吞吐率：12.35req/s] [内存消耗：4,476.90kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002160s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.004289s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000727s ]
+---------------------------------------------------------------
+[ 2018-01-06T16:59:29+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.141657s][吞吐率：7.06req/s] [内存消耗：4,454.23kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004197s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.004775s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000791s ]
+---------------------------------------------------------------
+[ 2018-01-06T17:28:47+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.193168s][吞吐率：5.18req/s] [内存消耗：4,419.98kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005167s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004427s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000704s ]
+---------------------------------------------------------------
+[ 2018-01-06T17:28:48+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.082450s][吞吐率：12.13req/s] [内存消耗：4,476.90kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002229s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.004845s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.001046s ]
+---------------------------------------------------------------
+[ 2018-01-06T17:28:48+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.119530s][吞吐率：8.37req/s] [内存消耗：4,454.23kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004839s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.004143s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000797s ]
+---------------------------------------------------------------
+[ 2018-01-06T17:28:48+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/item/all?tradeid=1&stageid=1
+[ info ] toubar.me/api/v1/item/all?tradeid=1&stageid=1 [运行时间：0.212812s][吞吐率：4.70req/s] [内存消耗：5,445.87kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004452s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.005458s ]
+[ sql ] [ SQL ] SELECT * FROM `item` ORDER BY `create_time`  desc [ RunTime:0.001361s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.004432s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` WHERE  `id` IN (3,6,2,4,5,1) [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.004256s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.004003s ]
+[ sql ] [ SQL ] SELECT `trade`.*,pivot.item_id AS pivot__item_id,pivot.trade_id AS pivot__trade_id,pivot.delete_time AS pivot__delete_time,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time FROM `trade` INNER JOIN `item_trade` `pivot` ON `pivot`.`trade_id`=`trade`.`id` WHERE  `pivot`.`item_id` IN (23,22,21,20,19,18,17,16,15,14,13,12,10,9) [ RunTime:0.001777s ]
+---------------------------------------------------------------
+[ 2018-01-06T17:29:56+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.115647s][吞吐率：8.65req/s] [内存消耗：4,476.90kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004555s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.004747s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000707s ]
+---------------------------------------------------------------
+[ 2018-01-06T17:29:56+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.161313s][吞吐率：6.20req/s] [内存消耗：4,454.23kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002088s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.004700s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000520s ]
+---------------------------------------------------------------
+[ 2018-01-06T17:29:56+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.269250s][吞吐率：3.71req/s] [内存消耗：4,420.43kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001853s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001919s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000654s ]
+---------------------------------------------------------------
+[ 2018-01-06T17:29:56+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/item/all?tradeid=1&stageid=1
+[ info ] toubar.me/api/v1/item/all?tradeid=1&stageid=1 [运行时间：0.230143s][吞吐率：4.35req/s] [内存消耗：5,445.81kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002370s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.004425s ]
+[ sql ] [ SQL ] SELECT * FROM `item` ORDER BY `create_time`  desc [ RunTime:0.001139s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.004303s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` WHERE  `id` IN (3,6,2,4,5,1) [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.004591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.003931s ]
+[ sql ] [ SQL ] SELECT `trade`.*,pivot.item_id AS pivot__item_id,pivot.trade_id AS pivot__trade_id,pivot.delete_time AS pivot__delete_time,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time FROM `trade` INNER JOIN `item_trade` `pivot` ON `pivot`.`trade_id`=`trade`.`id` WHERE  `pivot`.`item_id` IN (23,22,21,20,19,18,17,16,15,14,13,12,10,9) [ RunTime:0.001403s ]
+---------------------------------------------------------------
+[ 2018-01-06T17:30:45+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.131032s][吞吐率：7.63req/s] [内存消耗：4,476.90kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002308s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.004459s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000712s ]
+---------------------------------------------------------------
+[ 2018-01-06T17:30:45+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.107290s][吞吐率：9.32req/s] [内存消耗：4,454.23kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001647s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.003606s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000476s ]
+---------------------------------------------------------------
+[ 2018-01-06T17:30:45+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/item/all?tradeid=1&stageid=1
+[ info ] toubar.me/api/v1/item/all?tradeid=1&stageid=1 [运行时间：0.217117s][吞吐率：4.61req/s] [内存消耗：5,445.81kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002525s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.004486s ]
+[ sql ] [ SQL ] SELECT * FROM `item` ORDER BY `create_time`  desc [ RunTime:0.000964s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.001214s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` WHERE  `id` IN (3,6,2,4,5,1) [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.004839s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.003857s ]
+[ sql ] [ SQL ] SELECT `trade`.*,pivot.item_id AS pivot__item_id,pivot.trade_id AS pivot__trade_id,pivot.delete_time AS pivot__delete_time,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time FROM `trade` INNER JOIN `item_trade` `pivot` ON `pivot`.`trade_id`=`trade`.`id` WHERE  `pivot`.`item_id` IN (23,22,21,20,19,18,17,16,15,14,13,12,10,9) [ RunTime:0.001537s ]
+---------------------------------------------------------------
+[ 2018-01-06T17:30:45+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.290902s][吞吐率：3.44req/s] [内存消耗：4,419.98kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001970s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005125s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000563s ]
+---------------------------------------------------------------
+[ 2018-01-06T17:30:55+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.155403s][吞吐率：6.43req/s] [内存消耗：4,476.90kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002385s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001385s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000663s ]
+---------------------------------------------------------------
+[ 2018-01-06T17:30:55+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.143731s][吞吐率：6.96req/s] [内存消耗：4,454.23kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019459s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.004045s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000518s ]
+---------------------------------------------------------------
+[ 2018-01-06T17:30:55+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/item/all?tradeid=1&stageid=1
+[ info ] toubar.me/api/v1/item/all?tradeid=1&stageid=1 [运行时间：0.235427s][吞吐率：4.25req/s] [内存消耗：5,445.81kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010802s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.004773s ]
+[ sql ] [ SQL ] SELECT * FROM `item` ORDER BY `create_time`  desc [ RunTime:0.002423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.003871s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` WHERE  `id` IN (3,6,2,4,5,1) [ RunTime:0.000832s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.005559s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001442s ]
+[ sql ] [ SQL ] SELECT `trade`.*,pivot.item_id AS pivot__item_id,pivot.trade_id AS pivot__trade_id,pivot.delete_time AS pivot__delete_time,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time FROM `trade` INNER JOIN `item_trade` `pivot` ON `pivot`.`trade_id`=`trade`.`id` WHERE  `pivot`.`item_id` IN (23,22,21,20,19,18,17,16,15,14,13,12,10,9) [ RunTime:0.001146s ]
+---------------------------------------------------------------
+[ 2018-01-06T17:30:55+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.250748s][吞吐率：3.99req/s] [内存消耗：4,419.98kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002743s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004115s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000587s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:20:03+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.526596s][吞吐率：1.90req/s] [内存消耗：4,420.05kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007517s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003841s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000942s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:20:03+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.187974s][吞吐率：5.32req/s] [内存消耗：4,476.90kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011134s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001793s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000848s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:20:03+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.216487s][吞吐率：4.62req/s] [内存消耗：4,454.23kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002505s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.005298s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000615s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:20:03+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/item/all?tradeid=1&stageid=1
+[ info ] toubar.me/api/v1/item/all?tradeid=1&stageid=1 [运行时间：0.239386s][吞吐率：4.18req/s] [内存消耗：5,445.81kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001788s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.005224s ]
+[ sql ] [ SQL ] SELECT * FROM `item` ORDER BY `create_time`  desc [ RunTime:0.001091s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.001333s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` WHERE  `id` IN (3,6,2,4,5,1) [ RunTime:0.001198s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.006297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.003805s ]
+[ sql ] [ SQL ] SELECT `trade`.*,pivot.item_id AS pivot__item_id,pivot.trade_id AS pivot__trade_id,pivot.delete_time AS pivot__delete_time,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time FROM `trade` INNER JOIN `item_trade` `pivot` ON `pivot`.`trade_id`=`trade`.`id` WHERE  `pivot`.`item_id` IN (23,22,21,20,19,18,17,16,15,14,13,12,10,9) [ RunTime:0.001340s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:20:55+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.170542s][吞吐率：5.86req/s] [内存消耗：4,420.05kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001834s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003368s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000682s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:20:55+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.094023s][吞吐率：10.64req/s] [内存消耗：4,454.23kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002826s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.001536s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000595s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:20:55+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.133471s][吞吐率：7.49req/s] [内存消耗：4,476.90kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002675s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001718s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000761s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:20:56+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/item/all?tradeid=1&stageid=1
+[ info ] toubar.me/api/v1/item/all?tradeid=1&stageid=1 [运行时间：0.201370s][吞吐率：4.97req/s] [内存消耗：5,445.81kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001688s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.004114s ]
+[ sql ] [ SQL ] SELECT * FROM `item` ORDER BY `create_time`  desc [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.004113s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` WHERE  `id` IN (3,6,2,4,5,1) [ RunTime:0.005668s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.003900s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.004783s ]
+[ sql ] [ SQL ] SELECT `trade`.*,pivot.item_id AS pivot__item_id,pivot.trade_id AS pivot__trade_id,pivot.delete_time AS pivot__delete_time,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time FROM `trade` INNER JOIN `item_trade` `pivot` ON `pivot`.`trade_id`=`trade`.`id` WHERE  `pivot`.`item_id` IN (23,22,21,20,19,18,17,16,15,14,13,12,10,9) [ RunTime:0.001317s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:30:57+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.190702s][吞吐率：5.24req/s] [内存消耗：4,419.98kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001543s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001174s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000621s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:30:57+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.108334s][吞吐率：9.23req/s] [内存消耗：4,454.23kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002440s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.002072s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000767s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:30:57+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.133707s][吞吐率：7.48req/s] [内存消耗：4,476.90kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009689s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.002345s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000898s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:30:57+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/item/all?tradeid=1&stageid=1
+[ info ] toubar.me/api/v1/item/all?tradeid=1&stageid=1 [运行时间：0.219199s][吞吐率：4.56req/s] [内存消耗：5,445.81kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002142s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.004827s ]
+[ sql ] [ SQL ] SELECT * FROM `item` ORDER BY `create_time`  desc [ RunTime:0.000830s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.003990s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` WHERE  `id` IN (3,6,2,4,5,1) [ RunTime:0.000806s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.003905s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001388s ]
+[ sql ] [ SQL ] SELECT `trade`.*,pivot.item_id AS pivot__item_id,pivot.trade_id AS pivot__trade_id,pivot.delete_time AS pivot__delete_time,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time FROM `trade` INNER JOIN `item_trade` `pivot` ON `pivot`.`trade_id`=`trade`.`id` WHERE  `pivot`.`item_id` IN (23,22,21,20,19,18,17,16,15,14,13,12,10,9) [ RunTime:0.001274s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:31:18+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.546630s][吞吐率：1.83req/s] [内存消耗：4,419.98kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001784s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003680s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000719s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:31:19+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.062058s][吞吐率：16.11req/s] [内存消耗：4,454.23kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001707s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.001523s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000561s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:31:19+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.074721s][吞吐率：13.38req/s] [内存消耗：4,476.90kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001746s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001755s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000863s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:31:19+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/item/all?tradeid=1&stageid=1
+[ info ] toubar.me/api/v1/item/all?tradeid=1&stageid=1 [运行时间：0.189528s][吞吐率：5.28req/s] [内存消耗：5,445.81kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001441s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.003725s ]
+[ sql ] [ SQL ] SELECT * FROM `item` ORDER BY `create_time`  desc [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.001858s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` WHERE  `id` IN (3,6,2,4,5,1) [ RunTime:0.000900s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.004642s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.003953s ]
+[ sql ] [ SQL ] SELECT `trade`.*,pivot.item_id AS pivot__item_id,pivot.trade_id AS pivot__trade_id,pivot.delete_time AS pivot__delete_time,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time FROM `trade` INNER JOIN `item_trade` `pivot` ON `pivot`.`trade_id`=`trade`.`id` WHERE  `pivot`.`item_id` IN (23,22,21,20,19,18,17,16,15,14,13,12,10,9) [ RunTime:0.000921s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:32:01+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.234897s][吞吐率：4.26req/s] [内存消耗：4,419.98kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001566s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001055s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000551s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:32:01+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.126747s][吞吐率：7.89req/s] [内存消耗：4,476.90kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001817s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001508s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000904s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:32:02+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.188302s][吞吐率：5.31req/s] [内存消耗：4,454.23kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001986s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.004436s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.002331s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:32:02+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/item/all?tradeid=1&stageid=1
+[ info ] toubar.me/api/v1/item/all?tradeid=1&stageid=1 [运行时间：0.278149s][吞吐率：3.60req/s] [内存消耗：5,445.81kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002344s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.002550s ]
+[ sql ] [ SQL ] SELECT * FROM `item` ORDER BY `create_time`  desc [ RunTime:0.001198s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.001194s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` WHERE  `id` IN (3,6,2,4,5,1) [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.002406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001316s ]
+[ sql ] [ SQL ] SELECT `trade`.*,pivot.item_id AS pivot__item_id,pivot.trade_id AS pivot__trade_id,pivot.delete_time AS pivot__delete_time,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time FROM `trade` INNER JOIN `item_trade` `pivot` ON `pivot`.`trade_id`=`trade`.`id` WHERE  `pivot`.`item_id` IN (23,22,21,20,19,18,17,16,15,14,13,12,10,9) [ RunTime:0.001156s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:32:55+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.329183s][吞吐率：3.04req/s] [内存消耗：4,419.98kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001479s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001150s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000495s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:32:56+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.153728s][吞吐率：6.50req/s] [内存消耗：4,476.90kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002720s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.004532s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000714s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:32:56+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.147287s][吞吐率：6.79req/s] [内存消耗：4,454.23kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001821s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.001390s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000531s ]
+---------------------------------------------------------------
+[ 2018-01-06T18:32:56+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/item/all?tradeid=1&stageid=1
+[ info ] toubar.me/api/v1/item/all?tradeid=1&stageid=1 [运行时间：0.311652s][吞吐率：3.21req/s] [内存消耗：5,445.81kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003456s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.001633s ]
+[ sql ] [ SQL ] SELECT * FROM `item` ORDER BY `create_time`  desc [ RunTime:0.000903s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.001556s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` WHERE  `id` IN (3,6,2,4,5,1) [ RunTime:0.000895s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.001338s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001288s ]
+[ sql ] [ SQL ] SELECT `trade`.*,pivot.item_id AS pivot__item_id,pivot.trade_id AS pivot__trade_id,pivot.delete_time AS pivot__delete_time,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time FROM `trade` INNER JOIN `item_trade` `pivot` ON `pivot`.`trade_id`=`trade`.`id` WHERE  `pivot`.`item_id` IN (23,22,21,20,19,18,17,16,15,14,13,12,10,9) [ RunTime:0.001155s ]
+---------------------------------------------------------------
+[ 2018-01-06T19:23:21+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.221897s][吞吐率：4.51req/s] [内存消耗：4,419.98kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001816s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001194s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000550s ]
+---------------------------------------------------------------
+[ 2018-01-06T19:23:22+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.096064s][吞吐率：10.41req/s] [内存消耗：4,476.90kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001890s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.003929s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000660s ]
+---------------------------------------------------------------
+[ 2018-01-06T19:23:22+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.126609s][吞吐率：7.90req/s] [内存消耗：4,454.23kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018753s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.002299s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000784s ]
+---------------------------------------------------------------
+[ 2018-01-06T19:23:22+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/item/all?tradeid=1&stageid=1
+[ info ] toubar.me/api/v1/item/all?tradeid=1&stageid=1 [运行时间：0.221330s][吞吐率：4.52req/s] [内存消耗：5,445.81kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006318s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.001431s ]
+[ sql ] [ SQL ] SELECT * FROM `item` ORDER BY `create_time`  desc [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.003088s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` WHERE  `id` IN (3,6,2,4,5,1) [ RunTime:0.001018s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.001415s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001302s ]
+[ sql ] [ SQL ] SELECT `trade`.*,pivot.item_id AS pivot__item_id,pivot.trade_id AS pivot__trade_id,pivot.delete_time AS pivot__delete_time,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time FROM `trade` INNER JOIN `item_trade` `pivot` ON `pivot`.`trade_id`=`trade`.`id` WHERE  `pivot`.`item_id` IN (23,22,21,20,19,18,17,16,15,14,13,12,10,9) [ RunTime:0.001178s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:56:43+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.357805s][吞吐率：2.79req/s] [内存消耗：4,419.98kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006879s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003746s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.001251s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:56:44+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.085090s][吞吐率：11.75req/s] [内存消耗：4,476.90kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002110s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001636s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000984s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:56:44+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.145668s][吞吐率：6.86req/s] [内存消耗：4,454.23kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002559s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.003892s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000743s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:56:44+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/item/all?tradeid=1&stageid=1
+[ info ] toubar.me/api/v1/item/all?tradeid=1&stageid=1 [运行时间：0.279070s][吞吐率：3.58req/s] [内存消耗：5,445.81kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004479s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.001863s ]
+[ sql ] [ SQL ] SELECT * FROM `item` ORDER BY `create_time`  desc [ RunTime:0.001942s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.001428s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` WHERE  `id` IN (3,6,2,4,5,1) [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.001421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001373s ]
+[ sql ] [ SQL ] SELECT `trade`.*,pivot.item_id AS pivot__item_id,pivot.trade_id AS pivot__trade_id,pivot.delete_time AS pivot__delete_time,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time FROM `trade` INNER JOIN `item_trade` `pivot` ON `pivot`.`trade_id`=`trade`.`id` WHERE  `pivot`.`item_id` IN (23,22,21,20,19,18,17,16,15,14,13,12,10,9) [ RunTime:0.001342s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:57:00+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.268435s][吞吐率：3.73req/s] [内存消耗：4,419.98kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003328s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001620s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000800s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:57:00+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.076355s][吞吐率：13.10req/s] [内存消耗：4,476.90kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002235s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001790s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000676s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:57:00+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.104915s][吞吐率：9.53req/s] [内存消耗：4,454.23kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004898s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.001540s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000562s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:57:00+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/item/all?tradeid=1&stageid=1
+[ info ] toubar.me/api/v1/item/all?tradeid=1&stageid=1 [运行时间：0.254554s][吞吐率：3.93req/s] [内存消耗：5,445.81kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004425s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.001381s ]
+[ sql ] [ SQL ] SELECT * FROM `item` ORDER BY `create_time`  desc [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.001199s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` WHERE  `id` IN (3,6,2,4,5,1) [ RunTime:0.000815s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.002030s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001317s ]
+[ sql ] [ SQL ] SELECT `trade`.*,pivot.item_id AS pivot__item_id,pivot.trade_id AS pivot__trade_id,pivot.delete_time AS pivot__delete_time,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time FROM `trade` INNER JOIN `item_trade` `pivot` ON `pivot`.`trade_id`=`trade`.`id` WHERE  `pivot`.`item_id` IN (23,22,21,20,19,18,17,16,15,14,13,12,10,9) [ RunTime:0.001205s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:57:12+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.342693s][吞吐率：2.92req/s] [内存消耗：4,419.98kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002530s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001928s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000667s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:57:13+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.109532s][吞吐率：9.13req/s] [内存消耗：4,454.23kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002444s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.002126s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000631s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:57:13+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.118651s][吞吐率：8.43req/s] [内存消耗：4,476.90kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001863s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001312s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000725s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:57:13+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/item/all?tradeid=1&stageid=1
+[ info ] toubar.me/api/v1/item/all?tradeid=1&stageid=1 [运行时间：0.183877s][吞吐率：5.44req/s] [内存消耗：5,445.81kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003388s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.001692s ]
+[ sql ] [ SQL ] SELECT * FROM `item` ORDER BY `create_time`  desc [ RunTime:0.001269s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.001540s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` WHERE  `id` IN (3,6,2,4,5,1) [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.001399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001460s ]
+[ sql ] [ SQL ] SELECT `trade`.*,pivot.item_id AS pivot__item_id,pivot.trade_id AS pivot__trade_id,pivot.delete_time AS pivot__delete_time,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time FROM `trade` INNER JOIN `item_trade` `pivot` ON `pivot`.`trade_id`=`trade`.`id` WHERE  `pivot`.`item_id` IN (23,22,21,20,19,18,17,16,15,14,13,12,10,9) [ RunTime:0.001196s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:57:35+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.705881s][吞吐率：1.42req/s] [内存消耗：4,419.98kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001952s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001589s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000627s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:57:35+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.193074s][吞吐率：5.18req/s] [内存消耗：4,476.90kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003793s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001466s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000621s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:57:35+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.180138s][吞吐率：5.55req/s] [内存消耗：4,454.23kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011455s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.001804s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000732s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:57:36+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/item/all?tradeid=1&stageid=1
+[ info ] toubar.me/api/v1/item/all?tradeid=1&stageid=1 [运行时间：0.337035s][吞吐率：2.97req/s] [内存消耗：5,445.81kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001852s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.005439s ]
+[ sql ] [ SQL ] SELECT * FROM `item` ORDER BY `create_time`  desc [ RunTime:0.001314s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` WHERE  `id` IN (3,6,2,4,5,1) [ RunTime:0.000843s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.001445s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001512s ]
+[ sql ] [ SQL ] SELECT `trade`.*,pivot.item_id AS pivot__item_id,pivot.trade_id AS pivot__trade_id,pivot.delete_time AS pivot__delete_time,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time FROM `trade` INNER JOIN `item_trade` `pivot` ON `pivot`.`trade_id`=`trade`.`id` WHERE  `pivot`.`item_id` IN (23,22,21,20,19,18,17,16,15,14,13,12,10,9) [ RunTime:0.001177s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:57:43+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.606967s][吞吐率：1.65req/s] [内存消耗：4,419.98kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002189s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001236s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000620s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:57:43+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.128617s][吞吐率：7.78req/s] [内存消耗：4,454.23kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002728s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.001954s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000716s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:57:43+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.147713s][吞吐率：6.77req/s] [内存消耗：4,476.90kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002116s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001628s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000807s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:57:43+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/item/all?tradeid=1&stageid=1
+[ info ] toubar.me/api/v1/item/all?tradeid=1&stageid=1 [运行时间：0.337090s][吞吐率：2.97req/s] [内存消耗：5,445.81kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004080s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.001292s ]
+[ sql ] [ SQL ] SELECT * FROM `item` ORDER BY `create_time`  desc [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.001143s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` WHERE  `id` IN (3,6,2,4,5,1) [ RunTime:0.001342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.004565s ]
+[ sql ] [ SQL ] SELECT `trade`.*,pivot.item_id AS pivot__item_id,pivot.trade_id AS pivot__trade_id,pivot.delete_time AS pivot__delete_time,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time FROM `trade` INNER JOIN `item_trade` `pivot` ON `pivot`.`trade_id`=`trade`.`id` WHERE  `pivot`.`item_id` IN (23,22,21,20,19,18,17,16,15,14,13,12,10,9) [ RunTime:0.000979s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:58:04+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.347888s][吞吐率：2.87req/s] [内存消耗：4,419.98kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001685s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001162s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000488s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:58:04+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.079482s][吞吐率：12.58req/s] [内存消耗：4,476.90kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003108s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001902s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.001030s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:58:04+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.113386s][吞吐率：8.82req/s] [内存消耗：4,454.23kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002049s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.002643s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000710s ]
+---------------------------------------------------------------
+[ 2018-01-06T20:58:04+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/item/all?tradeid=1&stageid=1
+[ info ] toubar.me/api/v1/item/all?tradeid=1&stageid=1 [运行时间：0.238532s][吞吐率：4.19req/s] [内存消耗：5,445.81kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007097s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.001373s ]
+[ sql ] [ SQL ] SELECT * FROM `item` ORDER BY `create_time`  desc [ RunTime:0.000822s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.001317s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` WHERE  `id` IN (3,6,2,4,5,1) [ RunTime:0.001964s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.001281s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001333s ]
+[ sql ] [ SQL ] SELECT `trade`.*,pivot.item_id AS pivot__item_id,pivot.trade_id AS pivot__trade_id,pivot.delete_time AS pivot__delete_time,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time FROM `trade` INNER JOIN `item_trade` `pivot` ON `pivot`.`trade_id`=`trade`.`id` WHERE  `pivot`.`item_id` IN (23,22,21,20,19,18,17,16,15,14,13,12,10,9) [ RunTime:0.001055s ]

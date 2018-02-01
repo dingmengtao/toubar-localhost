@@ -1,0 +1,162 @@
+---------------------------------------------------------------
+[ 2017-12-26T10:37:22+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.293460s][吞吐率：3.41req/s] [内存消耗：4,428.12kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015628s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002399s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000727s ]
+---------------------------------------------------------------
+[ 2017-12-26T10:37:42+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.158201s][吞吐率：6.32req/s] [内存消耗：4,461.95kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002194s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.001734s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000573s ]
+---------------------------------------------------------------
+[ 2017-12-26T10:37:42+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.166242s][吞吐率：6.02req/s] [内存消耗：4,472.43kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001499s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001659s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.001222s ]
+---------------------------------------------------------------
+[ 2017-12-26T10:38:10+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.144037s][吞吐率：6.94req/s] [内存消耗：4,472.43kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001863s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.002548s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000789s ]
+---------------------------------------------------------------
+[ 2017-12-26T10:38:10+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.152099s][吞吐率：6.57req/s] [内存消耗：4,461.95kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001603s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.001717s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000708s ]
+---------------------------------------------------------------
+[ 2017-12-26T10:45:18+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.132592s][吞吐率：7.54req/s] [内存消耗：4,472.43kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002404s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001886s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.001306s ]
+---------------------------------------------------------------
+[ 2017-12-26T10:45:18+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.221763s][吞吐率：4.51req/s] [内存消耗：4,461.95kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003611s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.067121s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000589s ]
+---------------------------------------------------------------
+[ 2017-12-26T13:18:35+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.128498s][吞吐率：7.78req/s] [内存消耗：4,471.87kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005828s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.004209s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000831s ]
+---------------------------------------------------------------
+[ 2017-12-26T13:18:35+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.116515s][吞吐率：8.58req/s] [内存消耗：4,461.52kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001980s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.001745s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000697s ]
+---------------------------------------------------------------
+[ 2017-12-26T14:35:15+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.119894s][吞吐率：8.34req/s] [内存消耗：4,467.77kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004781s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.004522s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.001169s ]
+---------------------------------------------------------------
+[ 2017-12-26T14:35:15+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.175173s][吞吐率：5.71req/s] [内存消耗：4,457.05kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031734s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.001307s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000409s ]
+---------------------------------------------------------------
+[ 2017-12-26T15:18:09+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.126162s][吞吐率：7.93req/s] [内存消耗：4,454.48kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006928s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.004284s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000754s ]
+---------------------------------------------------------------
+[ 2017-12-26T15:18:09+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.138915s][吞吐率：7.20req/s] [内存消耗：4,465.06kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002617s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.002625s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000683s ]
+---------------------------------------------------------------
+[ 2017-12-26T15:18:27+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.173531s][吞吐率：5.76req/s] [内存消耗：4,465.06kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031217s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001657s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000854s ]
+---------------------------------------------------------------
+[ 2017-12-26T15:18:27+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.217449s][吞吐率：4.60req/s] [内存消耗：4,454.48kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026067s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.065699s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000584s ]
+---------------------------------------------------------------
+[ 2017-12-26T15:50:50+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.166073s][吞吐率：6.02req/s] [内存消耗：4,465.06kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006039s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.012501s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000796s ]
+---------------------------------------------------------------
+[ 2017-12-26T15:50:50+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.175085s][吞吐率：5.71req/s] [内存消耗：4,454.48kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003434s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.002091s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000703s ]
+---------------------------------------------------------------
+[ 2017-12-26T15:51:14+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.154324s][吞吐率：6.48req/s] [内存消耗：4,465.06kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002373s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.005513s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000598s ]
+---------------------------------------------------------------
+[ 2017-12-26T15:51:14+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.164242s][吞吐率：6.09req/s] [内存消耗：4,454.48kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003667s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.039864s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000586s ]
+---------------------------------------------------------------
+[ 2017-12-26T15:53:42+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.165268s][吞吐率：6.05req/s] [内存消耗：4,465.06kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002154s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.002281s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000826s ]
+---------------------------------------------------------------
+[ 2017-12-26T15:53:42+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.173595s][吞吐率：5.76req/s] [内存消耗：4,454.48kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001943s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.002147s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000594s ]
+---------------------------------------------------------------
+[ 2017-12-26T16:08:23+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.196400s][吞吐率：5.09req/s] [内存消耗：4,454.48kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001955s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.070042s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000525s ]
+---------------------------------------------------------------
+[ 2017-12-26T16:08:23+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.198420s][吞吐率：5.04req/s] [内存消耗：4,465.06kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002611s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.078767s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000605s ]
+---------------------------------------------------------------
+[ 2017-12-26T16:08:33+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.141885s][吞吐率：7.05req/s] [内存消耗：4,454.48kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002498s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.016534s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000675s ]
+---------------------------------------------------------------
+[ 2017-12-26T16:08:33+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.178587s][吞吐率：5.60req/s] [内存消耗：4,465.06kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003082s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001535s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000609s ]
+---------------------------------------------------------------
+[ 2017-12-26T16:09:36+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/stage/all
+[ info ] toubar.me/api/v1/stage/all [运行时间：0.150141s][吞吐率：6.66req/s] [内存消耗：4,454.48kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017093s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `stage` [ RunTime:0.001755s ]
+[ sql ] [ SQL ] SELECT * FROM `stage` [ RunTime:0.000540s ]
+---------------------------------------------------------------
+[ 2017-12-26T16:09:36+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar.me/api/v1/trade/all [运行时间：0.152004s][吞吐率：6.58req/s] [内存消耗：4,465.06kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021214s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.001378s ]
+[ sql ] [ SQL ] SELECT * FROM `trade` [ RunTime:0.000442s ]

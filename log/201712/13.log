@@ -1,0 +1,103 @@
+---------------------------------------------------------------
+[ 2017-12-13T09:56:28+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：2.642812s][吞吐率：0.38req/s] [内存消耗：4,355.02kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.164123s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.049256s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.027712s ]
+[ sql ] [ SQL ] INSERT INTO `user` (`openid`) VALUES ('oJWz60PxIt1n7vLLm91Dzq0VekrI') [ RunTime:0.164686s ]
+---------------------------------------------------------------
+[ 2017-12-13T09:57:44+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.162715s][吞吐率：6.15req/s] [内存消耗：4,356.80kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001709s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002856s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000477s ]
+---------------------------------------------------------------
+[ 2017-12-13T13:54:38+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.441703s][吞吐率：2.26req/s] [内存消耗：4,359.42kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007453s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008169s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.002192s ]
+---------------------------------------------------------------
+[ 2017-12-13T13:54:38+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.534604s][吞吐率：1.87req/s] [内存消耗：4,359.42kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004116s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005612s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.001071s ]
+---------------------------------------------------------------
+[ 2017-12-13T14:24:30+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/item/create
+[ info ] toubar.mehttp://toubar.me/api/v1/item/create [运行时间：0.081685s][吞吐率：12.24req/s] [内存消耗：4,847.95kb] [文件加载：53]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001643s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003534s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000592s ]
+---------------------------------------------------------------
+[ 2017-12-13T16:07:13+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：0.283382s][吞吐率：3.53req/s] [内存消耗：4,359.69kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004414s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003003s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.000707s ]
+---------------------------------------------------------------
+[ 2017-12-13T16:31:48+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/item/create
+[ info ] toubar.mehttp://toubar.me/api/v1/item/create [运行时间：0.176126s][吞吐率：5.68req/s] [内存消耗：4,921.63kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002220s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.001039s ]
+[ sql ] [ SQL ] INSERT INTO `item` (`user_id` , `name` , `stage_id` , `telephone` , `bp_url` , `video_url` , `create_time` , `update_time`) VALUES (2 , 'test' , 1 , '15237179193' , 'C:\\Users\\DingMengTao\\Desktop\\Laravel框架关键技术解析---高清版.pdf' , 'C:\\Users\\DingMengTao\\Desktop\\1-1.mp4' , 1513153908 , 1513153908) [ RunTime:0.045678s ]
+---------------------------------------------------------------
+[ 2017-12-13T16:35:59+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/item/create
+[ info ] toubar.mehttp://toubar.me/api/v1/item/create [运行时间：0.170707s][吞吐率：5.86req/s] [内存消耗：4,922.23kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001497s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.000940s ]
+[ sql ] [ SQL ] INSERT INTO `item` (`user_id` , `name` , `stage_id` , `telephone` , `bp_url` , `video_url` , `create_time` , `update_time`) VALUES (2 , 'test' , 1 , '15237179193' , 'C:\\Users\\DingMengTao\\Desktop\\Laravel框架关键技术解析---高清版.pdf' , 'C:\\Users\\DingMengTao\\Desktop\\1-1.mp4' , 1513154159 , 1513154159) [ RunTime:0.049192s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.000803s ]
+[ sql ] [ SQL ] INSERT INTO `item_trade` (`item_id` , `trade_id`) VALUES (21 , 3) [ RunTime:0.000330s ]
+---------------------------------------------------------------
+[ 2017-12-13T20:26:31+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar.me/api/v1/token/user [运行时间：1.062709s][吞吐率：0.94req/s] [内存消耗：4,359.69kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003551s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.016550s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.028861s ]
+---------------------------------------------------------------
+[ 2017-12-13T20:26:45+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/item/create
+[ info ] toubar.mehttp://toubar.me/api/v1/item/create [运行时间：0.300005s][吞吐率：3.33req/s] [内存消耗：4,924.23kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027072s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.001851s ]
+[ sql ] [ SQL ] INSERT INTO `item` (`user_id` , `name` , `stage_id` , `telephone` , `bp_url` , `video_url` , `create_time` , `update_time`) VALUES (2 , 'test' , 1 , '15237179193' , 'C:\\Users\\DingMengTao\\Desktop\\Laravel框架关键技术解析---高清版.pdf' , 'C:\\Users\\DingMengTao\\Desktop\\1-1.mp4' , 1513168005 , 1513168005) [ RunTime:0.017201s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.001310s ]
+[ sql ] [ SQL ] INSERT INTO `item_trade` (`item_id` , `trade_id`) VALUES (22 , 1) [ RunTime:0.000388s ]
+[ sql ] [ SQL ] INSERT INTO `item_trade` (`item_id` , `trade_id`) VALUES (22 , 2) [ RunTime:0.000230s ]
+[ sql ] [ SQL ] INSERT INTO `item_trade` (`item_id` , `trade_id`) VALUES (22 , 3) [ RunTime:0.091535s ]
+---------------------------------------------------------------
+[ 2017-12-13T20:47:39+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/item/create
+[ info ] toubar.mehttp://toubar.me/api/v1/item/create [运行时间：0.156016s][吞吐率：6.41req/s] [内存消耗：4,925.03kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001608s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.001203s ]
+[ sql ] [ SQL ] INSERT INTO `item` (`user_id` , `name` , `stage_id` , `telephone` , `bp_url` , `video_url` , `create_time` , `update_time`) VALUES (2 , 'test' , 1 , '15237179193' , 'C:\\Users\\DingMengTao\\Desktop\\Laravel框架关键技术解析---高清版.pdf' , 'C:\\Users\\DingMengTao\\Desktop\\1-1.mp4' , 1513169259 , 1513169259) [ RunTime:0.036584s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.000932s ]
+[ sql ] [ SQL ] INSERT INTO `item_trade` (`item_id` , `trade_id` , `create_time` , `update_time`) VALUES (26 , 3 , 1513169259 , 1513169259) [ RunTime:0.000426s ]
+---------------------------------------------------------------
+[ 2017-12-13T20:48:16+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/item/create
+[ info ] toubar.mehttp://toubar.me/api/v1/item/create [运行时间：0.364693s][吞吐率：2.74req/s] [内存消耗：4,925.84kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001383s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.001479s ]
+[ sql ] [ SQL ] INSERT INTO `item` (`user_id` , `name` , `stage_id` , `telephone` , `bp_url` , `video_url` , `create_time` , `update_time`) VALUES (2 , 'test' , 1 , '15237179193' , 'C:\\Users\\DingMengTao\\Desktop\\Laravel框架关键技术解析---高清版.pdf' , 'C:\\Users\\DingMengTao\\Desktop\\1-1.mp4' , 1513169295 , 1513169295) [ RunTime:0.054067s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.084415s ]
+[ sql ] [ SQL ] INSERT INTO `item_trade` (`item_id` , `trade_id` , `create_time` , `update_time`) VALUES (27 , 3 , 1513169295 , 1513169295) [ RunTime:0.000689s ]
+---------------------------------------------------------------
+[ 2017-12-13T20:52:29+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/item/create
+[ info ] toubar.mehttp://toubar.me/api/v1/item/create [运行时间：0.213428s][吞吐率：4.69req/s] [内存消耗：4,926.13kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001608s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.001648s ]
+[ sql ] [ SQL ] INSERT INTO `item` (`user_id` , `name` , `stage_id` , `telephone` , `bp_url` , `video_url` , `create_time` , `update_time`) VALUES (2 , 'test' , 1 , '15237179193' , 'C:\\Users\\DingMengTao\\Desktop\\Laravel框架关键技术解析---高清版.pdf' , 'C:\\Users\\DingMengTao\\Desktop\\1-1.mp4' , 1513169549 , 1513169549) [ RunTime:0.004708s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.000842s ]
+[ sql ] [ SQL ] INSERT INTO `item_trade` (`item_id` , `trade_id` , `create_time` , `update_time`) VALUES (28 , 1 , 1513169549 , 1513169549) [ RunTime:0.000396s ]
+[ sql ] [ SQL ] INSERT INTO `item_trade` (`item_id` , `trade_id` , `create_time` , `update_time`) VALUES (28 , 2 , 1513169549 , 1513169549) [ RunTime:0.090002s ]
+[ sql ] [ SQL ] INSERT INTO `item_trade` (`item_id` , `trade_id` , `create_time` , `update_time`) VALUES (28 , 3 , 1513169549 , 1513169549) [ RunTime:0.000241s ]
+---------------------------------------------------------------
+[ 2017-12-13T20:53:18+08:00 ] 127.0.0.1 127.0.0.1 POST http://toubar.me/api/v1/item/create
+[ info ] toubar.mehttp://toubar.me/api/v1/item/create [运行时间：0.197297s][吞吐率：5.07req/s] [内存消耗：4,926.13kb] [文件加载：55]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001635s ] mysql:host=127.0.0.1;port=3306;dbname=toubar;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item` [ RunTime:0.001293s ]
+[ sql ] [ SQL ] INSERT INTO `item` (`user_id` , `name` , `stage_id` , `telephone` , `bp_url` , `video_url` , `create_time` , `update_time`) VALUES (2 , 'test' , 1 , '15237179193' , 'C:\\Users\\DingMengTao\\Desktop\\Laravel框架关键技术解析---高清版.pdf' , 'C:\\Users\\DingMengTao\\Desktop\\1-1.mp4' , 1513169598 , 1513169598) [ RunTime:0.012818s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `item_trade` [ RunTime:0.076407s ]
+[ sql ] [ SQL ] INSERT INTO `item_trade` (`item_id` , `trade_id` , `create_time` , `update_time`) VALUES (29 , 1 , 1513169598 , 1513169598) [ RunTime:0.000383s ]
+[ sql ] [ SQL ] INSERT INTO `item_trade` (`item_id` , `trade_id` , `create_time` , `update_time`) VALUES (29 , 2 , 1513169598 , 1513169598) [ RunTime:0.000152s ]
+[ sql ] [ SQL ] INSERT INTO `item_trade` (`item_id` , `trade_id` , `create_time` , `update_time`) VALUES (29 , 3 , 1513169598 , 1513169598) [ RunTime:0.000156s ]
