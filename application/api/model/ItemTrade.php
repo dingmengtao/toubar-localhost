@@ -11,6 +11,7 @@ namespace app\api\model;
 
 class ItemTrade extends BaseModel
 {
+    protected $table = 'we_item_trade';
     //    隐藏不需要显示的字段
     protected $hidden = [];
     //    自动写入时间戳

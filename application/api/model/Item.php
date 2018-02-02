@@ -12,18 +12,28 @@ use app\api\model\Trade as TradeModel;
 
 class Item extends BaseModel
 {
+    protected $table = 'we_item';
     //    隐藏不需要显示的字段
     protected $hidden = ['user_id','stage_id','isgood','isshow','isaudit','delete_time','update_time'];
     //    自动写入时间戳
     protected $autoWriteTimestamp = true;
     //    读取器
-    public function getBpUrlAttr($value){
+    public function getBpUrlAttr($value,$data){
+        if($data['type'] == 2){
+            return $this->prefixTbaUrl($value);
+        }
         return $this->prefixBpUrl($value);
     }
-    public function getVideoUrlAttr($value){
+    public function getVideoUrlAttr($value,$data){
+        if($data['type'] == 2){
+            return $this->prefixTbaUrl($value);
+        }
         return $this->prefixVideoUrl($value);
     }
-    public function getImgUrlAttr($value){
+    public function getImgUrlAttr($value,$data){
+        if($data['type'] == 2){
+            return $this->prefixTbaUrl($value);
+        }
         return $this->prefixVideoUrl($value);
     }
     //    项目所属阶段
@@ -32,7 +42,7 @@ class Item extends BaseModel
     }
     //    模型关联：项目模型关联行业模型，多对多关联
     public function trades(){
-        return $this->belongsToMany('Trade','item_trade','trade_id','item_id');
+        return $this->belongsToMany('Trade','we_item_trade','trade_id','item_id');
     }
     //    精选项目列表
     public static function getGoodItems(){

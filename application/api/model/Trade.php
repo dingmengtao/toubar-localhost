@@ -11,6 +11,7 @@ namespace app\api\model;
 
 class Trade extends BaseModel
 {
+    protected $table = 'we_trade';
     //    隐藏不需要显示的字段
     protected $hidden = ['isshow','delete_time','create_time','update_time','pivot'];
     //    自动写入时间戳
@@ -18,7 +19,7 @@ class Trade extends BaseModel
 
     //    模型关联：项目模型关联项目模型，多对多关联
     public function items(){
-        return $this->belongsToMany('Item','item_trade','item_id','trade_id');
+        return $this->belongsToMany('Item','we_item_trade','item_id','trade_id');
     }
     //    根据行业id获取项目id列表,形成数组并返回
     public static function itemIds($trade_id){

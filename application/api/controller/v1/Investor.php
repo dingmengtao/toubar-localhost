@@ -47,7 +47,7 @@ class Investor extends BaseController
             if(!empty($result)){
                 return json(new SuccessMessage([
                     'code' => 400,
-                    'msg' => '该号码投资人已认证，无需重复认证'
+                    'msg' => '该号码或微信用户投资人已认证，无需重复认证'
                 ]),201);
             }
             $investor = new InvestorModel();

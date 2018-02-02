@@ -11,6 +11,7 @@ namespace app\api\model;
 
 class Stage extends BaseModel
 {
+    protected $table = 'we_stage';
     //    隐藏不需要显示的字段
     protected $hidden = ['isshow','delete_time','create_time','update_time'];
     //    自动写入时间戳

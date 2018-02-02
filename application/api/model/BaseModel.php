@@ -28,6 +28,11 @@ class BaseModel extends Model
         $finalUrl = config('setting.video_prefix').$value;
         return $finalUrl;
     }
+    //  组织后台创建项目或投资人的绝对路径
+    protected function prefixTbaUrl($value){
+        $finalUrl = config('setting.tba_base_prefix').$value;
+        return $finalUrl;
+    }
     //    重命名并存储文件，返回新的文件名数组
     protected static function saveFiles($values,$set_path){
         $name_urls = array();

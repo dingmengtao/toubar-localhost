@@ -13,21 +13,28 @@ use tests\thinkphp\library\think\cache\driver\redisTest;
 
 class Investor extends BaseModel
 {
+    protected $table = 'we_investor';
     //        隐藏不需要的字段
     protected $hidden = ['id','user_id','isaudit','isshow','company','telephone','identify_one_url','identify_two_url','delete_time','create_time','update_time'];
     //    自动写入时间戳
     protected $autoWriteTimestamp = true;
 
     //    读取器
-    public function getImgUrlAttr($value){
+    public function getImgUrlAttr($value,$data){
+        if($data['type'] == 2){
+            return $this->prefixTbaUrl($value);
+        }
         return $this->prefixImgUrl($value);
     }
-    public function getIdentifyOneUrlAttr($value){
+    public function getIdentifyOneUrlAttr($value,$data){
+        if($data['type'] == 2){
+            return $this->prefixTbaUrl($value);
+        }
         return $this->prefixImgUrl($value);
     }
     //    添加认证投资人时查询是否已经存在认证投资人
     public static function getInvestor($telephone,$uid){
-        $investor = self::where('telephone','=',$telephone)->where('user_id','=',$uid)->find();
+        $investor = self::where('telephone','=',$telephone)->whereOr('user_id','=',$uid)->find();
         return $investor;
     }
     //    获取所有投资人信息，形成列表
@@ -38,7 +45,7 @@ class Investor extends BaseModel
     }
     //    模型关联：投资人模型关联行业模型，多对多关联
     public function trades(){
-        return $this->belongsToMany('Trade','investor_trade','trade_id','investor_id');
+        return $this->belongsToMany('Trade','we_investor_trade','trade_id','investor_id');
     }
     //    保存图片
     public static function saveImages($files){

@@ -11,6 +11,7 @@ namespace app\api\model;
 
 class User extends BaseModel
 {
+    protected $table = 'we_user';
     //    自动写入时间戳
     protected $autoWriteTimestamp = true;
 
