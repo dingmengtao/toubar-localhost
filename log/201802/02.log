@@ -225,3 +225,14 @@
 [ sql ] [ SQL ] SHOW COLUMNS FROM `we_item_trade` [ RunTime:0.000974s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `we_trade` [ RunTime:0.001308s ]
 [ sql ] [ SQL ] SELECT `we_trade`.*,pivot.item_id AS pivot__item_id,pivot.trade_id AS pivot__trade_id,pivot.status AS pivot__status,pivot.order AS pivot__order,pivot.delete_time AS pivot__delete_time,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time,pivot.created_by AS pivot__created_by,pivot.updated_by AS pivot__updated_by,pivot.created_at AS pivot__created_at,pivot.updated_at AS pivot__updated_at,pivot.deleted_at AS pivot__deleted_at FROM `we_trade` INNER JOIN `we_item_trade` `pivot` ON `pivot`.`trade_id`=`we_trade`.`id` WHERE  `pivot`.`item_id` IN (27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,10) [ RunTime:0.001119s ]
+---------------------------------------------------------------
+[ 2018-02-02T17:32:12+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/item/all?tradeid=1&stageid=1
+[ info ] toubar-localhost.me/api/v1/item/all?tradeid=1&stageid=1 [运行时间：0.539562s][吞吐率：1.85req/s] [内存消耗：3,840.57kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002399s ] mysql:host=127.0.0.1;port=3306;dbname=toubar-admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_item` [ RunTime:0.001990s ]
+[ sql ] [ SQL ] SELECT * FROM `we_item` ORDER BY `create_time`  desc [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_stage` [ RunTime:0.001390s ]
+[ sql ] [ SQL ] SELECT * FROM `we_stage` WHERE  `id` IN (4,6,3,2,5,1) [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_item_trade` [ RunTime:0.001330s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_trade` [ RunTime:0.000895s ]
+[ sql ] [ SQL ] SELECT `we_trade`.*,pivot.item_id AS pivot__item_id,pivot.trade_id AS pivot__trade_id,pivot.status AS pivot__status,pivot.order AS pivot__order,pivot.delete_time AS pivot__delete_time,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time,pivot.created_by AS pivot__created_by,pivot.updated_by AS pivot__updated_by,pivot.created_at AS pivot__created_at,pivot.updated_at AS pivot__updated_at,pivot.deleted_at AS pivot__deleted_at FROM `we_trade` INNER JOIN `we_item_trade` `pivot` ON `pivot`.`trade_id`=`we_trade`.`id` WHERE  `pivot`.`item_id` IN (27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,10) [ RunTime:0.000833s ]
