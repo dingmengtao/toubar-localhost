@@ -1,0 +1,23 @@
+---------------------------------------------------------------
+[ 2018-02-07T19:05:30+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/trade/all
+[ info ] toubar-localhost.me/api/v1/trade/all [运行时间：0.888989s][吞吐率：1.12req/s] [内存消耗：3,254.44kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001619s ] mysql:host=127.0.0.1;port=3306;dbname=toubar-admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_trade` [ RunTime:0.193454s ]
+[ sql ] [ SQL ] SELECT * FROM `we_trade` [ RunTime:0.016114s ]
+---------------------------------------------------------------
+[ 2018-02-07T19:05:30+08:00 ] 127.0.0.1 127.0.0.1 POST /api/v1/token/user
+[ info ] toubar-localhost.me/api/v1/token/user [运行时间：0.866649s][吞吐率：1.15req/s] [内存消耗：3,173.10kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002048s ] mysql:host=127.0.0.1;port=3306;dbname=toubar-admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_user` [ RunTime:0.191530s ]
+[ sql ] [ SQL ] SELECT * FROM `we_user` WHERE  `openid` = 'oJWz60PxIt1n7vLLm91Dzq0VekrI' LIMIT 1 [ RunTime:0.062965s ]
+---------------------------------------------------------------
+[ 2018-02-07T19:05:30+08:00 ] 127.0.0.1 127.0.0.1 GET /api/v1/item/all?tradeid=1&stageid=1
+[ info ] toubar-localhost.me/api/v1/item/all?tradeid=1&stageid=1 [运行时间：1.016642s][吞吐率：0.98req/s] [内存消耗：3,835.03kb] [文件加载：58]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010506s ] mysql:host=127.0.0.1;port=3306;dbname=toubar-admin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_item` [ RunTime:0.078778s ]
+[ sql ] [ SQL ] SELECT * FROM `we_item` ORDER BY `create_time`  desc [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_stage` [ RunTime:0.002591s ]
+[ sql ] [ SQL ] SELECT * FROM `we_stage` WHERE  `id` IN (4,6,3,2,5,1) [ RunTime:0.055906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_item_trade` [ RunTime:0.032768s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `we_trade` [ RunTime:0.002491s ]
+[ sql ] [ SQL ] SELECT `we_trade`.*,pivot.item_id AS pivot__item_id,pivot.trade_id AS pivot__trade_id,pivot.status AS pivot__status,pivot.order AS pivot__order,pivot.delete_time AS pivot__delete_time,pivot.create_time AS pivot__create_time,pivot.update_time AS pivot__update_time,pivot.created_by AS pivot__created_by,pivot.updated_by AS pivot__updated_by,pivot.created_at AS pivot__created_at,pivot.updated_at AS pivot__updated_at,pivot.deleted_at AS pivot__deleted_at FROM `we_trade` INNER JOIN `we_item_trade` `pivot` ON `pivot`.`trade_id`=`we_trade`.`id` WHERE  `pivot`.`item_id` IN (27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,10) [ RunTime:0.018327s ]
